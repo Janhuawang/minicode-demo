@@ -3,8 +3,16 @@
     "pages/tabBar/component/index",
     "pages/tabBar/API/index"
   ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
   "tabBar": {
-    "custom": true,
+    "custom": false,
     "color": "#7A7E83",
     "selectedColor": "#3cc51f",
     "borderStyle": "black",
@@ -22,15 +30,18 @@
         "selectedIconPath": "/resources/image/icon_API_HL.png",
         "text": "接口"
       }
-    ],
-    "usingComponents": {}
+    ]
   },
-  "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle": "black"
-  },
-  "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "subPackages": [
+    {
+      "root": "pages/component/",
+      "pages": [
+        "pages/view/view",
+        "pages/scroll-view/scroll-view",
+        "pages/swiper/swiper",
+        "pages/text/text",
+        "pages/progress/progress"
+      ]
+    }
+  ]
 }
