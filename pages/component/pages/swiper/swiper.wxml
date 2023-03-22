@@ -1,1 +1,39 @@
-<view>New Page</view>
+<import src="/pages/common/foot.wxml" />
+<import src="/pages/common/head.wxml" />
+<view style="display: flex; margin-top: 40rpx; flex-direction: column; justify-content: start; align-items: center;">
+    <template is="head" data="{{title:'视图Swiper',desc:'轮播组件'}}"></template>
+    <view class="swiper">
+        <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+            <block wx:for="{{imgUrls}}" wx:for-item="item">
+                <swiper-item>
+                    <view class="swiper item {{item}}"></view>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    <view style="margin-top: 150rpd; width: 100%;">
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_switch">
+                <view class="weui-cell__bd">指示点</view>
+                <view class="weui-cell__ft">
+                    <switch checked="{{indicatorDots}}" bindchange="changeIndicatorDots" />
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_switch">
+                <view class="weui-cell__bd">自动播放</view>
+                <view class="weui-cell__ft">
+                    <switch checked="{{autoplay}}" bindchange="changeAutoplay" />
+                </view>
+            </view>
+        </view>
+    </view>
+    <view style="margin-top: 50rpx; width: 100%;">
+        <view style="display: flex; flex-direction:row; justify-content:space-between;align-items:center; margin: 40rpx 30rpx; ">
+            <text>幻灯片切换时长(ms)</text>
+            <text>{{duration}}</text>
+        </view>
+        <slider bindchange="durationChange" value="{{duration}}" min="500" max="2000" />
+    </view>
+   
+    <template is="foot"></template>
+</view>

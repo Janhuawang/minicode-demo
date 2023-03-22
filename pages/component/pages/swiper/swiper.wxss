@@ -1,3 +1,71 @@
-page {
-  
+@import "../../../common/lib/weui.wxss";
+
+page {}
+
+.swiper {
+    height: 400rpx;
+    width: 600rpx;
+}
+
+.item {
+    height: 400rpx;
+    width: 600rpx;
+}
+
+.item-image1 {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: #1AAD19;
+    color: #FFFFFF;
+    font-size: 36rpx;
+}
+
+.item-image1:before {
+    content: "A";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.item-image2 {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    color: #FFFFFF;
+    font-size: 36rpx;
+}
+
+.item-image2:before {
+    content: "B";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.item-image3 {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: brown;
+    color: #FFFFFF;
+    font-size: 36rpx;
+}
+
+.item-image3:before {
+    content: "C";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.info {
+    position: absolute;
+    right: 0;
+    color: #353535;
+    font-size: 30rpx;
 }
