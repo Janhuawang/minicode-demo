@@ -1,1 +1,18 @@
-<view>New Page</view>
+<import src="/pages/common/foot.wxml" />
+<import src="/pages/common/head.wxml" />
+<view style="display: flex; margin-top: 40rpx; flex-direction: column; justify-content: start; align-items: center;">
+    <template is="head" data="{{title:'视图view',desc:'展示一下Flex布局'}}"></template>
+    <text class="page-font-title" style="align-self: flex-start;">横行布局</text>
+    <view style="display:flex; flex-direction:row; justify-content: space-between;width: 100%;">
+        <view style="width: 0; flex-grow: 1; height: 400rpx; background-color: blueviolet;"></view>
+        <view style="width: 0; flex-grow: 1; height: 400rpx; background-color: brown;"></view>
+        <view style="width: 0; flex-grow: 1; height: 400rpx; background-color: black;"></view>
+    </view>
+    <text class="page-font-title" style="align-self: flex-start; margin-top: 40rpx;">纵向布局</text>
+    <view style="display:flex; flex-direction:column; justify-content: space-between;height: 400rpx;">
+        <view style="height: 0; flex-grow: 1;  width: 400rpx; background-color: blueviolet;"></view>
+        <view style="height: 0; flex-grow: 1;  width: 400rpx; background-color: brown;"></view>
+        <view style="height: 0; flex-grow: 1;  width: 400rpx; background-color: black;"></view>
+    </view>
+    <template is="foot"></template>
+</view>
