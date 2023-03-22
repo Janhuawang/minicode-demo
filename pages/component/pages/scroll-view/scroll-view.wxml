@@ -1,1 +1,42 @@
-<view>New Page</view>
+<import src="/pages/common/foot.wxml" />
+<import src="/pages/common/head.wxml" />
+<view style="display: flex; margin-top: 40rpx; flex-direction: column; justify-content: start; align-items: center;">
+    <template is="head" data="{{title:'视图scorll-view',desc:'滚动视图'}}"></template>
+    <text class="page-font-title" style="align-self: flex-start;">横行-x</text>
+    <scroll-view scroll-x="true" style="width: 100%; height: 300rpx;  white-space: nowrap;">
+        <view style="width:80%; height: 100%; background-color: blueviolet; display: inline-block;">
+            <view style="width:100%; height: 100%;display: flex; justify-content: center; align-items: center;">
+                A
+            </view>
+        </view>
+        <view style="width:80%; height: 100%; background-color: brown;display: inline-block;">
+            <view style="width:100%; height: 100%;display: flex; justify-content: center; align-items: center;">
+                B
+            </view>
+        </view>
+        <view style="width:80%; height: 100%; background-color: aquamarine;display: inline-block; ">
+            <view style="width:100%; height: 100%;display: flex; justify-content: center; align-items: center;">
+                C
+            </view>
+        </view>
+    </scroll-view>
+    <text class="page-font-title" style="align-self: flex-start; margin-top: 40rpx;">纵向-y</text>
+    <scroll-view scroll-y="{{true}}" style="height: 400rpx; ">
+        <view style="height: 300rpx; background-color: blueviolet;">
+            <view style="width:100%; height: 100%;display: flex; justify-content: center; align-items: center;">
+                A
+            </view>
+        </view>
+        <view style="height: 300rpx; background-color: brown;">
+            <view style="width:100%; height: 100%;display: flex; justify-content: center; align-items: center;">
+                B
+            </view>
+        </view>
+        <view style="height: 300rpx; background-color: black;">
+            <view style="width:100%; height: 100%;display: flex; justify-content: center; align-items: center;">
+                C
+            </view>
+        </view>
+    </scroll-view>
+    <template is="foot"></template>
+</view>
