@@ -1,0 +1,17 @@
+<import src="/pages/common/foot.wxml" />
+<import src="/pages/common/head.wxml" />
+<view style="display: flex; margin-top: 40rpx; flex-direction: column; justify-content: start; align-items: center;">
+    <template is="head" data="{{title:'登录接口测试',desc:'接口请求+json数据转换'}}"></template>
+    <view class="page-body">
+        <view class="page-body-wording">
+            <text class="page-body-text">点击向服务器发起请求</text>
+        </view>
+        <view class="btn-area">
+            <button bindtap="onLogin">
+                login
+            </button>
+        </view>
+    </view>
+
+    <template is="foot"></template>
+</view>

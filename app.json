@@ -1,7 +1,9 @@
 {
   "pages": [
     "pages/tabBar/component/index",
-    "pages/tabBar/API/index"
+    "pages/tabBar/API/index",
+    "pages/API/pages/request/request",
+    "pages/API/pages/login/login"
   ],
   "window": {
     "backgroundTextStyle": "light",

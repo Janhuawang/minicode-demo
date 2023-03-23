@@ -8,5 +8,15 @@ Component({
         })
       }
     }
+  },
+  data: {
+    list: [
+      {
+        id: "network",
+        name: "网络",
+        open: false,
+        pages: ['login']
+      },
+    ]
   }
 })
