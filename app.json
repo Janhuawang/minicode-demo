@@ -1,9 +1,7 @@
 {
   "pages": [
     "pages/tabBar/component/index",
-    "pages/tabBar/API/index",
-    "pages/API/pages/request/request",
-    "pages/API/pages/login/login"
+    "pages/tabBar/API/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -44,6 +42,14 @@
         "pages/text/text",
         "pages/progress/progress"
       ]
+    },
+    {
+      "root": "pages/API/",
+      "pages": [
+        "pages/request/request",
+        "pages/login/login"
+      ],
+      "lazyCodeLoading": "requiredComponents"
     }
   ]
 }
