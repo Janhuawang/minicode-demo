@@ -1,0 +1,21 @@
+<view class="index">
+    <view class="index-hd">
+        <view class="index-title">echarts组件能力使用</view>
+    </view>
+    <view class="index-bd">
+        <block wx:for="{{list}}" wx:for-item="item" wx:key="{{item.id}}">
+            <view class="list-item">
+                <view class="list-item-text">{{item.name}}</view>
+                <view class="list-item-body">
+                    <block wx:for="{{item.pages}}" wx:for-item="page" wx:for-index="pageIndex">
+                        <view wx:if="{{pageIndex!=0}}" class="list-item-line"></view>
+                        <navigator url="/pages/echarts/pages/{{page}}/{{page}}" class="navigator">
+                            <view class="navigator-text">{{page}}</view>
+                            <view class="navigator-arrow"></view>
+                        </navigator>
+                    </block>
+                </view>
+            </view>
+        </block>
+    </view>
+</view>
