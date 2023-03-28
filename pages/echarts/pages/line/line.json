@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "柱状图",
+  "navigationBarTitleText": "折线图",
   "usingComponents": {
     "ec-canvas": "/components/ec-canvas/ec-canvas"
   }

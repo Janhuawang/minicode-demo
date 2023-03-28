@@ -12,10 +12,10 @@ Component({
   data: {
     list: [
       {
-        id: "bar",
-        name: "柱状图",
+        id: "page",
+        name: "单页面承载",
         open: false,
-        pages: ['bar']
+        pages: ['bar', 'line']
       },
     ]
   }

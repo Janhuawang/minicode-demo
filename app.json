@@ -52,7 +52,8 @@
     {
       "root": "pages/echarts/",
       "pages": [
-        "pages/bar/bar"
+        "pages/bar/bar",
+        "pages/line/line"
       ]
     }
   ],
