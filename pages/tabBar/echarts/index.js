@@ -12,11 +12,18 @@ Component({
   data: {
     list: [
       {
-        id: "page",
-        name: "单页面承载",
+        id: "one",
+        name: "单个",
         open: false,
         pages: ['bar', 'line']
       },
+      {
+        id: "multi",
+        name: "多个",
+        open: false,
+        pages: ['multi']
+      },
+      
     ]
   }
 })

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "一个页面多个图表",
+  "usingComponents": {
+    "ec-canvas": "/components/ec-canvas/ec-canvas"
+  }
+}

@@ -3,6 +3,7 @@
     "pages/tabBar/component/index",
     "pages/tabBar/API/index",
     "pages/tabBar/echarts/index"
+   
   ],
   "tabBar": {
     "custom": false,
@@ -53,7 +54,8 @@
       "root": "pages/echarts/",
       "pages": [
         "pages/bar/bar",
-        "pages/line/line"
+        "pages/line/line",
+        "pages/multi/multi"
       ]
     }
   ],
