@@ -47,8 +47,7 @@
       "pages": [
         "pages/request/request",
         "pages/login/login"
-      ],
-      "lazyCodeLoading": "requiredComponents"
+      ]
     },
     {
       "root": "pages/echarts/",

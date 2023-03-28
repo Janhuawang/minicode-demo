@@ -7,7 +7,7 @@
             <view class="list-item">
                 <view class="list-item-text">{{item.name}}</view>
                 <view class="list-item-body">
-                    <block wx:for="{{item.pages}}" wx:for-item="page" wx:for-index="pageIndex">
+                    <block wx:for="{{item.pages}}" wx:for-item="page" wx:key="" wx:for-index="pageIndex">
                         <view wx:if="{{pageIndex!=0}}" class="list-item-line"></view>
                         <navigator url="/pages/echarts/pages/{{page}}/{{page}}" class="navigator">
                             <view class="navigator-text">{{page}}</view>
