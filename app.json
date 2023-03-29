@@ -3,7 +3,6 @@
     "pages/tabBar/component/index",
     "pages/tabBar/API/index",
     "pages/tabBar/echarts/index"
-   
   ],
   "tabBar": {
     "custom": false,
@@ -40,7 +39,9 @@
         "pages/scroll-view/scroll-view",
         "pages/swiper/swiper",
         "pages/text/text",
-        "pages/progress/progress"
+        "pages/progress/progress",
+        "pages/tp/tp"
+
       ]
     },
     {

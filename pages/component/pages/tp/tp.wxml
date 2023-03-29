@@ -1,0 +1,6 @@
+<import src="/pages/templates/dialog-ec.wxml" />
+<view style="background-color: red; width: 100%; height: 100%;">
+
+  <template is="dialog-ec" data="{{content:'啦啦啦啦啦啦啦2',isShow:true}}"></template>
+
+</view>

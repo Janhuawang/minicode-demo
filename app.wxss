@@ -65,3 +65,28 @@
    justify-content: space-between;
    box-sizing: border-box;
  }
+
+ /**app.wxss - 弹窗的**/
+ .zan-dialog{
+  visibility: hidden;
+}
+
+.zan-dialog-show{
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, .5);
+}
+
+.zan-dialog-container{
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}

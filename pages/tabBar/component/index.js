@@ -29,6 +29,12 @@ Component({
         open: false,
         pages: ['button', 'checkbox', 'form', 'input', 'label', 'picker', 'radio', 'slider', 'switch', 'textarea']
       },
+      {
+        id: "tp",
+        name: "模版",
+        open: false,
+        pages: ['tp']
+      }
     ]
   }
 })
