@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "弹窗展示echarts",
+  "usingComponents": {
+    "ec-dialog": "/components/ec-dialog/ec-dialog"
+  }
+}

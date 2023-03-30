@@ -1,0 +1,7 @@
+<view class="zan-dialog {{isShow?'zan-dialog-show':''}}" bindtap="closeDialog">
+    <view class="zan-dialog-container">
+        <view class="content" style="display: flex;flex-direction: row; justify-content: center;align-items: center; margin: 0rpx 16rpx;  height: 300rpx; background-color: white;">
+            <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+        </view>
+    </view>
+</view>

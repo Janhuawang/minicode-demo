@@ -44,7 +44,16 @@ Component({
       value: false
     }
   },
-
+  created(){
+    console.log("图表 created")
+  },
+  attached(){
+    console.log("图表 attached")
+  },
+  detached(){
+    console.log("图表 detached")
+  },
+  
   data: {
     isUseNewCanvas: false
   },

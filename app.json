@@ -41,7 +41,6 @@
         "pages/text/text",
         "pages/progress/progress",
         "pages/tp/tp"
-
       ]
     },
     {
@@ -56,7 +55,8 @@
       "pages": [
         "pages/bar/bar",
         "pages/line/line",
-        "pages/multi/multi"
+        "pages/multi/multi",
+        "pages/dialog/dialog"
       ]
     }
   ],

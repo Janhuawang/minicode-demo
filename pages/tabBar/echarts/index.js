@@ -23,6 +23,12 @@ Component({
         open: false,
         pages: ['multi']
       },
+      {
+        id: "dialog",
+        name: "弹窗的",
+        open: false,
+        pages: ['dialog']
+      },
       
     ]
   }
