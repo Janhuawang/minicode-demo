@@ -39,7 +39,7 @@ Component({
   },
   methods: {
     closeDialog: function(){
-      this.setData({isShow:false})
+      this.setData({isShow:!this.data.isShow})
     }
   },
   created(){

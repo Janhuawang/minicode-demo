@@ -1,31 +1,45 @@
 /**ec-dialog.wxss - 弹窗的**/
 .zan-dialog {
-    visibility: hidden;
-    width: 100%;
-    height: 100%;
+  visibility: hidden;
 }
 
 .zan-dialog-show {
-    visibility: visible;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, .3);
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, .3);
 }
 
 .zan-dialog-container {
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-show {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0rpx 16rpx;
+  height: 300rpx;
+  background-color: white;
+}
+
+.content-hidden {
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
 }
 
 ec-canvas {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }

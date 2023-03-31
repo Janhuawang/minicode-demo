@@ -1,6 +1,6 @@
-<view class="zan-dialog {{isShow?'zan-dialog-show':''}}" bindtap="closeDialog">
+<view wx:if="{{isShow}}" class="zan-dialog {{true?'zan-dialog-show':''}}" bindtap="closeDialog">
     <view class="zan-dialog-container">
-        <view class="content" style="display: flex;flex-direction: row; justify-content: center;align-items: center; margin: 0rpx 16rpx;  height: 300rpx; background-color: white;">
+        <view class="{{true?'content-show':'content-hidden'}}" >
             <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
         </view>
     </view>
